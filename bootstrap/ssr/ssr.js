@@ -34,7 +34,7 @@ _sfc_main$s.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Logo.vue");
   return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-const Logo = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$s], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/Logo.vue"]]);
+const Logo = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$s], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Logo.vue"]]);
 const _sfc_main$r = {
   components: {
     Head,
@@ -81,7 +81,7 @@ _sfc_main$r.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/Index.vue");
   return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
-const Index$4 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$r], ["__scopeId", "data-v-529a9e67"], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Auth/Index.vue"]]);
+const Index$4 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$r], ["__scopeId", "data-v-529a9e67"], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Auth/Index.vue"]]);
 const __vite_glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$4
@@ -146,7 +146,7 @@ _sfc_main$q.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/TextInput.vue");
   return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
 };
-const TextInput = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$q], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/TextInput.vue"]]);
+const TextInput = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$q], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/TextInput.vue"]]);
 const _sfc_main$p = {
   props: {
     loading: Boolean
@@ -171,7 +171,7 @@ _sfc_main$p.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/LoadingButton.vue");
   return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
 };
-const LoadingButton = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$p], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/LoadingButton.vue"]]);
+const LoadingButton = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$p], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/LoadingButton.vue"]]);
 const _sfc_main$o = {
   components: {
     Head,
@@ -251,7 +251,7 @@ _sfc_main$o.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Credential/Login.vue");
   return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
-const Login = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Credential/Login.vue"]]);
+const Login = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Credential/Login.vue"]]);
 const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Login
@@ -326,7 +326,7 @@ _sfc_main$n.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Icon.vue");
   return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
-const Icon = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$n], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/Icon.vue"]]);
+const Icon = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$n], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Icon.vue"]]);
 const _sfc_main$m = {
   props: {
     placement: {
@@ -392,7 +392,7 @@ _sfc_main$m.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Dropdown.vue");
   return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
-const Dropdown = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$m], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/Dropdown.vue"]]);
+const Dropdown = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$m], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Dropdown.vue"]]);
 const _sfc_main$l = {
   components: {
     Icon,
@@ -479,7 +479,7 @@ _sfc_main$l.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/MainMenu.vue");
   return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
-const MainMenu = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$l], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/MainMenu.vue"]]);
+const MainMenu = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$l], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/MainMenu.vue"]]);
 const _sfc_main$k = {
   data() {
     return {
@@ -521,7 +521,7 @@ _sfc_main$k.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/FlashMessages.vue");
   return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
-const FlashMessages = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$k], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/FlashMessages.vue"]]);
+const FlashMessages = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$k], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/FlashMessages.vue"]]);
 const _sfc_main$j = {
   components: {
     Dropdown,
@@ -548,7 +548,7 @@ const _sfc_main$j = {
       this.$inertia.put(`/notifications/${notificationId}/mark-as-read`);
     },
     filterRead(arr) {
-      return arr.find((item) => item == null ? void 0 : item.read);
+      return arr.filter((item) => (item == null ? void 0 : item.read) === 0);
     }
   }
 };
@@ -631,13 +631,12 @@ function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     placement: "bottom-end"
   }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
-      var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l;
+      var _a, _b, _c, _d;
       if (_push2) {
         _push2(`<div class="group flex items-center cursor-pointer select-none"${_scopeId}><div${_scopeId}>`);
         _push2(ssrRenderComponent(_component_el_badge, {
-          value: (_c = $options.filterRead((_b = (_a = $props.auth) == null ? void 0 : _a.user) == null ? void 0 : _b.notifications)) == null ? void 0 : _c.length,
-          class: "item",
-          hidden: ((_f = $options.filterRead((_e = (_d = $props.auth) == null ? void 0 : _d.user) == null ? void 0 : _e.notifications)) == null ? void 0 : _f.length) === 0
+          value: $options.filterRead((_b = (_a = $props.auth) == null ? void 0 : _a.user) == null ? void 0 : _b.notifications).length,
+          class: "item"
         }, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
@@ -708,9 +707,8 @@ function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           createVNode("div", { class: "group flex items-center cursor-pointer select-none" }, [
             createVNode("div", null, [
               createVNode(_component_el_badge, {
-                value: (_i = $options.filterRead((_h = (_g = $props.auth) == null ? void 0 : _g.user) == null ? void 0 : _h.notifications)) == null ? void 0 : _i.length,
-                class: "item",
-                hidden: ((_l = $options.filterRead((_k = (_j = $props.auth) == null ? void 0 : _j.user) == null ? void 0 : _k.notifications)) == null ? void 0 : _l.length) === 0
+                value: $options.filterRead((_d = (_c = $props.auth) == null ? void 0 : _c.user) == null ? void 0 : _d.notifications).length,
+                class: "item"
               }, {
                 default: withCtx(() => [
                   createVNode(_component_el_button, {
@@ -732,7 +730,7 @@ function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
                   })
                 ]),
                 _: 1
-              }, 8, ["value", "hidden"])
+              }, 8, ["value"])
             ])
           ])
         ];
@@ -883,7 +881,7 @@ _sfc_main$j.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Layout.vue");
   return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
-const Layout = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$j], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/Layout.vue"]]);
+const Layout = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$j], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Layout.vue"]]);
 Chart.register(Title, Tooltip, Legend, ArcElement, BarElement, CategoryScale, LinearScale);
 const _sfc_main$i = {
   components: {
@@ -1021,7 +1019,7 @@ _sfc_main$i.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Index.vue");
   return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
-const Index$3 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$i], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Dashboard/Index.vue"]]);
+const Index$3 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$i], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Dashboard/Index.vue"]]);
 const __vite_glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$3
@@ -1160,7 +1158,7 @@ _sfc_main$h.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Notifications.vue");
   return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
-const Notifications = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$h], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Notifications.vue"]]);
+const Notifications = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$h], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Notifications.vue"]]);
 const __vite_glob_0_3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Notifications
@@ -1218,7 +1216,7 @@ _sfc_main$g.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/TextareaInput.vue");
   return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
 };
-const TextareaInput = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["ssrRender", _sfc_ssrRender$g], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/TextareaInput.vue"]]);
+const TextareaInput = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["ssrRender", _sfc_ssrRender$g], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/TextareaInput.vue"]]);
 const _sfc_main$f = {
   inheritAttrs: false,
   props: {
@@ -1279,7 +1277,7 @@ _sfc_main$f.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/DatePick.vue");
   return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
-const DatePick = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["ssrRender", _sfc_ssrRender$f], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/DatePick.vue"]]);
+const DatePick = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["ssrRender", _sfc_ssrRender$f], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/DatePick.vue"]]);
 const _sfc_main$e = {
   inheritAttrs: false,
   props: {
@@ -1343,7 +1341,7 @@ _sfc_main$e.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/SelectInput.vue");
   return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
 };
-const SelectInput = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["ssrRender", _sfc_ssrRender$e], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/SelectInput.vue"]]);
+const SelectInput = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["ssrRender", _sfc_ssrRender$e], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/SelectInput.vue"]]);
 const _sfc_main$d = {
   inheritAttrs: false,
   props: {
@@ -1401,7 +1399,7 @@ _sfc_main$d.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/NumberText.vue");
   return _sfc_setup$d ? _sfc_setup$d(props, ctx) : void 0;
 };
-const NumberText = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["ssrRender", _sfc_ssrRender$d], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/NumberText.vue"]]);
+const NumberText = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["ssrRender", _sfc_ssrRender$d], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/NumberText.vue"]]);
 const _sfc_main$c = {
   components: {
     Head,
@@ -1964,7 +1962,7 @@ _sfc_main$c.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Patients/Create.vue");
   return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
-const Create$2 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["ssrRender", _sfc_ssrRender$c], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Patients/Create.vue"]]);
+const Create$2 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["ssrRender", _sfc_ssrRender$c], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Patients/Create.vue"]]);
 const __vite_glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Create$2
@@ -2558,7 +2556,7 @@ _sfc_main$b.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Patients/Edit.vue");
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
-const Edit$2 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", _sfc_ssrRender$b], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Patients/Edit.vue"]]);
+const Edit$2 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", _sfc_ssrRender$b], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Patients/Edit.vue"]]);
 const __vite_glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Edit$2
@@ -2599,7 +2597,7 @@ _sfc_main$a.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Pagination.vue");
   return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
-const Pagination = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$a], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/Pagination.vue"]]);
+const Pagination = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$a], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Pagination.vue"]]);
 const _sfc_main$9 = {
   components: {
     Dropdown
@@ -2665,7 +2663,7 @@ _sfc_main$9.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/SearchFilter.vue");
   return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
 };
-const SearchFilter = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$9], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/SearchFilter.vue"]]);
+const SearchFilter = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$9], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/SearchFilter.vue"]]);
 const _sfc_main$8 = {
   components: {
     Head,
@@ -3642,7 +3640,7 @@ _sfc_main$8.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Patients/Index.vue");
   return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
-const Index$2 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$8], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Patients/Index.vue"]]);
+const Index$2 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$8], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Patients/Index.vue"]]);
 const __vite_glob_0_6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$2
@@ -3804,7 +3802,7 @@ _sfc_main$7.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Supplies/Create.vue");
   return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
-const Create$1 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Supplies/Create.vue"]]);
+const Create$1 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Supplies/Create.vue"]]);
 const __vite_glob_0_7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Create$1
@@ -3942,7 +3940,7 @@ _sfc_main$6.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Supplies/Edit.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
-const Edit$1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$6], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Supplies/Edit.vue"]]);
+const Edit$1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$6], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Supplies/Edit.vue"]]);
 const __vite_glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Edit$1
@@ -4320,7 +4318,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Supplies/Index.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const Index$1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Supplies/Index.vue"]]);
+const Index$1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Supplies/Index.vue"]]);
 const __vite_glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$1
@@ -4386,7 +4384,7 @@ _sfc_main$4.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/FileInput.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const FileInput = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/FileInput.vue"]]);
+const FileInput = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/FileInput.vue"]]);
 const _sfc_main$3 = {
   components: {
     FileInput,
@@ -4515,7 +4513,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Users/Create.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const Create = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Users/Create.vue"]]);
+const Create = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Users/Create.vue"]]);
 const __vite_glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Create
@@ -4543,7 +4541,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/TrashedMessage.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const TrashedMessage = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Shared/TrashedMessage.vue"]]);
+const TrashedMessage = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/TrashedMessage.vue"]]);
 const _sfc_main$1 = {
   components: {
     FileInput,
@@ -4706,7 +4704,7 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Users/Edit.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const Edit = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Users/Edit.vue"]]);
+const Edit = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Users/Edit.vue"]]);
 const __vite_glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Edit
@@ -4911,7 +4909,7 @@ _sfc_main.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Users/Index.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const Index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/jolima/workingFiles/tabisproj/resources/js/Pages/Users/Index.vue"]]);
+const Index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Users/Index.vue"]]);
 const __vite_glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index
