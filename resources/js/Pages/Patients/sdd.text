@@ -1,0 +1,63 @@
+  <!-- <form @submit.prevent="store">
+        <div class="flex flex-wrap -mb-8 -mr-6 p-8">
+          <text-input v-model="form.first_name" :error="form.errors.first_name" class="pb-8 pr-6 w-full lg:w-1/2" label="First name" />
+          <text-input v-model="form.last_name" :error="form.errors.last_name" class="pb-8 pr-6 w-full lg:w-1/2" label="Last name" />
+          <text-input v-model="form.date_of_consult" :error="form.errors.date_of_consult" class="pb-8 pr-6 w-full lg:w-1/2" label="Date" />
+          <select-input v-model="form.sex" :error="form.errors.sex" class="pb-8 pr-6 w-full lg:w-1/2" label="Sex">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            </select-input>
+          <text-input v-model="form.age" :error="form.errors.age" class="pb-8 pr-6 w-full lg:w-1/2" label="Age" />
+          <text-input v-model="form.address" :error="form.errors.address" class="pb-8 pr-6 w-full lg:w-1/2" label="Address" />
+          <text-input v-model="form.phone" :error="form.errors.phone" class="pb-8 pr-6 w-full lg:w-1/2" label="Contact No" />
+          <text-input v-model="form.place_of_bite" :error="form.errors.place_of_bite" class="pb-8 pr-6 w-full lg:w-1/2" label="Place (Where Biting Occured)" />
+          <select-input v-model="form.type_of_animal" :error="form.errors.type_of_animal" class="pb-8 pr-6 w-full lg:w-1/2" label="Animal Type">
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Snake">Snake</option>
+            <option value="Others">Others</option>
+          </select-input>
+          <text-input v-model="form.date_of_bite" :error="form.errors.date_of_bite" class="pb-8 pr-6 w-full lg:w-1/2" label="Date Of Bite" />
+          <select-input v-model="form.washed" :error="form.errors.washed" class="pb-8 pr-6 w-full lg:w-1/2" label="Washed">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select-input>
+          <div class="flex items-center">
+            <input type="radio" id="option1" value="option1" v-model="selectedOption" class="sr-only peer">
+            <label for="option1" class="bg-gray-100 border border-gray-200 text-indigo-800 text-sm font-medium rounded-full px-4 py-2 cursor-pointer hover:bg-gray-200">
+              Option 1
+            </label>
+
+            <input type="radio" id="option2" value="option2" v-model="selectedOption" class="sr-only peer">
+            <label for="option2" class="bg-gray-100 border border-gray-200 text-indigo-800 text-sm font-medium rounded-full px-4 py-2 cursor-pointer hover:bg-gray-200">
+              Option 2
+            </label>
+          </div>
+          <text-input v-model="form.site" :error="form.errors.site" class="pb-8 pr-6 w-full lg:w-1/2" label="Site(Body Part of Bite)" />
+          <select-input v-model="form.type_of_bite" :error="form.errors.type_of_bite" class="pb-8 pr-6 w-full lg:w-1/2" label="Type of Bite">
+            <option value="Bite">Bite</option>
+            <option value="No Bite">No Bite</option>
+          </select-input>
+          <select-input v-model="form.category" :error="form.errors.category" class="pb-8 pr-6 w-full lg:w-1/2" label="Category">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select-input>
+          <text-input v-model="form.rig_date" :error="form.errors.rig_date" class="pb-8 pr-6 w-full lg:w-1/2" label="RIG Given Date" />
+          <text-input v-model="form.tcv_date" :error="form.errors.tcv_date" class="pb-8 pr-6 w-full lg:w-1/2" label="TCV Date" />
+          <select-input v-model="form.outcome" :error="form.errors.outcome" class="pb-8 pr-6 w-full lg:w-1/2" label="Outcome">
+            <option value="Alive">C</option>
+            <option value="Dead">INC</option>
+            <option value="Lost">N</option>
+            <option value="Lost">D</option>
+          </select-input><select-input v-model="form.animal_status" :error="form.errors.animal_status" class="pb-8 pr-6 w-full lg:w-1/2" label="Animal Status">
+            <option value="Alive">Alive</option>
+            <option value="Dead">Dead</option>
+            <option value="Lost">Lost</option>
+          </select-input>
+          <TextareaInput v-model="form.remarks" :error="form.errors.remarks" class="pb-8 pr-6 w-full lg:w-full" label="Remarks"/>
+        </div>
+        <div class="flex items-center justify-end px-8 py-4 bg-gray-50 border-t border-gray-100">
+          <loading-button :loading="form.processing" class="btn-indigo" type="submit">Create Patient Record</loading-button>
+        </div>
+      </form> -->

@@ -1,0 +1,18 @@
+{
+  "resources/images/.logo.png": {
+    "file": "assets/.logo-mF6ym6uu.png",
+    "src": "resources/images/.logo.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-D2-myQTF.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-ChgEz1Ys.css"
+    ],
+    "assets": [
+      "assets/.logo-mF6ym6uu.png"
+    ]
+  }
+}
