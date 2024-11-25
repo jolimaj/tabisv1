@@ -39,9 +39,8 @@ class VerifyCsrfToken
      *
      * @var array<int, string>
      */
-    protected $except = [
-        '/login',
-    ];
+    protected $except = [];
+
     /**
      * The globally ignored URIs that should be excluded from CSRF verification.
      *

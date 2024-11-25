@@ -41,7 +41,7 @@ class ExpiryStockOutNotification extends Command
         $this->info('Product stock check completed.');
 
         // Check supplies that going to expire next month
-        $nearExpirationDate = $supplies->whereUpcomingExpiration();
+        $nearExpirationDate = $supplies->whereUpcomingExpiration()->get();
 
         // Save notifications for out-of-stock items
         foreach ($nearExpirationDate as $supply) {

@@ -12,6 +12,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use DB; // Import the DB facade
+use Illuminate\Support\Str;
 
 class BiteHistory extends Model
 {
@@ -161,23 +162,9 @@ class BiteHistory extends Model
         return $result;
     }
 
-    public function scopeDateInTwoDays($query, $data) {
-        $dates = [];
-
-        $filteredDate = collect($data)->filter(function ($value, $key) {
-            return Str::startsWith($key, 'day');
-        });        
-
-        $result = [];
-        foreach ($filteredDate as $day) {
-            $record = $query->whereBetween($day, [Carbon::now()->subDays(2), Carbon::now()])
-                ->join('patients', 'bite_histories.patient_id', '=', 'patients.id')
-                ->get();
-            $result[] = [
-                'phone' => $record->phone,
-            ];
-            
-        }
-        return $result;
+    public function scopePatientDetails($query, $tcvId){
+        return 
+            $query->where('bite_histories.tcv_id', $tcvId)
+                  ->join('patients', 'bite_histories.patient_id', '=', 'patients.id');
     }
 }

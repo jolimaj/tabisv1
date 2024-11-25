@@ -5,6 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 
 use App\Models\BiteHistory;
+use App\Models\TissueCultureVaccine;
+use App\Services\SMSNotification;
 
 class SendMessageNotification extends Command
 {
@@ -27,14 +29,29 @@ class SendMessageNotification extends Command
      */
     public function handle()
     {
-        $allBite =  BiteHistory::all();
+        $scheduleInTwoDays = TissueCultureVaccine::dateInTwoDays();
+        $this->info(collect($scheduleInTwoDays));
 
-        $scheduleInTwoDays = BiteHistory::dateInTwoDays($allBite);
-
-        $result = '';
-        foreach ($scheduleInTwoDays as $item) {
-            $result = $item->item;
+        $schedules;
+        foreach ($scheduleInTwoDays as $schedule) {
+            $patientDetails = BiteHistory::patientDetails($schedule['id'])->get();
+            $schedules = [
+                'tcvID'=>$schedule['id'],
+                'schedules'=>$schedule['schedules'],
+                'patients'=>$patientDetails,
+            ];
         }
-        $this->info('Notification Sent to.'.' '.$result);
+        
+        $res = [];
+        foreach (($schedules['patients']) as $patient) {
+            $smsService = new SMSNotification();
+            $smsService->sendMessage('+18777804236');
+            $res[] = [
+                'phone'=>$patient->phone,
+            ];
+        }
+        
+        $this->info(collect($res));
+        // $this->info('Notification Sent to.'.' '.$result);
     }
 }

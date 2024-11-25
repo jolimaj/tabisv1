@@ -18,7 +18,8 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "league/glide-symfony": "^2.0",
-        "pusher/pusher-php-server": "^7.2"
+        "pusher/pusher-php-server": "^7.2",
+        "twilio/sdk": "^8.3"
     },
     "require-dev": {
         "larastan/larastan": "^2.8",
