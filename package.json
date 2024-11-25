@@ -10,7 +10,7 @@
         "db:reset": "php artisan migrate:reset",
         "db:seed": "php artisan db:seed",
         "dev": "vite",
-        "build": "vite build && vite build --ssr",
+        "build": "vite build && vite build --ssr && php artisan migrate && php artisan db:seed",
         "start": "php artisan serve"
     },
     "devDependencies": {
