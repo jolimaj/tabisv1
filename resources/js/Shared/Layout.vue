@@ -39,7 +39,7 @@
                 <template #default>
                   <div class="group flex items-center cursor-pointer select-none">
                     <div>
-                      <el-badge :value="filterRead(auth?.user?.notifications).length" class="item" :hidden="filterRead(auth?.user?.notifications).length ===0">
+                      <el-badge :value="filterRead(auth?.user?.notifications).length" class="item" :hidden="filterRead(auth?.user?.notifications).length === 0">
                       <el-button text circle>
                         <el-icon color="#6b21a8" :size="20"><BellFilled /></el-icon>
                       </el-button>

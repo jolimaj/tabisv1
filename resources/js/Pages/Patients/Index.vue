@@ -285,8 +285,8 @@ export default {
 
           const tissue = this.tissueCultureVaccine.find((items) => items.id === item.tcv_id );
           return {
-            date_of_bite: item?.date_of_bite ? new Date(this.item?.date_of_bite) : '',
-            date_of_consult: item?.date_of_consult ? new Date(this.item?.date_of_consult) : '',
+            date_of_bite: item?.date_of_bite ? new Date(item?.date_of_bite) : '',
+            date_of_consult: item?.date_of_consult ? new Date(item?.date_of_consult) : '',
             animal_status_id: this.name(this.animalStatus, item.animal_status_id),
             animal_type_id: this.name(this.animals, item.animal_type_id),
             place: item.place,
@@ -294,7 +294,7 @@ export default {
             site_id: this.name(this.site, item.site_id),
             type_of_bite_id: this.name(this.biteTypes, item.type_of_bite_id),
             washed: item?.washed === 1 ? 'Yes' : 'No',
-            rig_date: item?.rig_date ? new Date(this.item?.rig_date) : '',
+            rig_date: item?.rig_date ? new Date(item?.rig_date) : '',
             route: tissue?.route,
             day0: tissue?.day0,
             day3: tissue?.day3,
