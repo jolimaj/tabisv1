@@ -688,12 +688,13 @@ function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     placement: "bottom-end"
   }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
-      var _a, _b, _c, _d;
+      var _a, _b, _c, _d, _e, _f, _g, _h;
       if (_push2) {
         _push2(`<div class="group flex items-center cursor-pointer select-none"${_scopeId}><div${_scopeId}>`);
         _push2(ssrRenderComponent(_component_el_badge, {
           value: $options.filterRead((_b = (_a = $props.auth) == null ? void 0 : _a.user) == null ? void 0 : _b.notifications).length,
-          class: "item"
+          class: "item",
+          hidden: $options.filterRead((_d = (_c = $props.auth) == null ? void 0 : _c.user) == null ? void 0 : _d.notifications).length === 0
         }, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
@@ -764,8 +765,9 @@ function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
           createVNode("div", { class: "group flex items-center cursor-pointer select-none" }, [
             createVNode("div", null, [
               createVNode(_component_el_badge, {
-                value: $options.filterRead((_d = (_c = $props.auth) == null ? void 0 : _c.user) == null ? void 0 : _d.notifications).length,
-                class: "item"
+                value: $options.filterRead((_f = (_e = $props.auth) == null ? void 0 : _e.user) == null ? void 0 : _f.notifications).length,
+                class: "item",
+                hidden: $options.filterRead((_h = (_g = $props.auth) == null ? void 0 : _g.user) == null ? void 0 : _h.notifications).length === 0
               }, {
                 default: withCtx(() => [
                   createVNode(_component_el_button, {
@@ -787,7 +789,7 @@ function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
                   })
                 ]),
                 _: 1
-              }, 8, ["value"])
+              }, 8, ["value", "hidden"])
             ])
           ])
         ];
@@ -1981,7 +1983,7 @@ const _sfc_main$b = {
   }
 };
 function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j;
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k;
   const _component_Head = resolveComponent("Head");
   const _component_Link = resolveComponent("Link");
   const _component_el_steps = resolveComponent("el-steps");
@@ -2147,7 +2149,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.date_of_bite,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Date of Bite",
-      disabled: ""
+      disabled: !((_a = $data.urlData) == null ? void 0 : _a.includes("newEntry"))
     }, null, _parent));
     _push(ssrRenderComponent(_component_text_input, {
       modelValue: $data.form.place,
@@ -2155,7 +2157,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.place,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Place (Where Biting Occured)",
-      disabled: !((_a = $data.urlData) == null ? void 0 : _a.includes("newEntry"))
+      disabled: !((_b = $data.urlData) == null ? void 0 : _b.includes("newEntry"))
     }, null, _parent));
     _push(ssrRenderComponent(_component_select_input, {
       modelValue: $data.form.animal_type_id,
@@ -2163,7 +2165,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.animal_type_id,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Animal Type",
-      disabled: !((_b = $data.urlData) == null ? void 0 : _b.includes("newEntry"))
+      disabled: !((_c = $data.urlData) == null ? void 0 : _c.includes("newEntry"))
     }, {
       default: withCtx((_, _push2, _parent2, _scopeId) => {
         if (_push2) {
@@ -2191,7 +2193,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.washed,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Washed",
-      disabled: !((_c = $data.urlData) == null ? void 0 : _c.includes("newEntry"))
+      disabled: !((_d = $data.urlData) == null ? void 0 : _d.includes("newEntry"))
     }, {
       default: withCtx((_, _push2, _parent2, _scopeId) => {
         if (_push2) {
@@ -2211,7 +2213,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.type_of_bite_id,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Type of Bite",
-      disabled: !((_d = $data.urlData) == null ? void 0 : _d.includes("newEntry"))
+      disabled: !((_e = $data.urlData) == null ? void 0 : _e.includes("newEntry"))
     }, {
       default: withCtx((_, _push2, _parent2, _scopeId) => {
         if (_push2) {
@@ -2239,7 +2241,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.site_id,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Site(body parts)",
-      disabled: !((_e = $data.urlData) == null ? void 0 : _e.includes("newEntry"))
+      disabled: !((_f = $data.urlData) == null ? void 0 : _f.includes("newEntry"))
     }, {
       default: withCtx((_, _push2, _parent2, _scopeId) => {
         if (_push2) {
@@ -2270,7 +2272,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.date_of_consult,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Date Of Consult",
-      disabled: !((_f = $data.urlData) == null ? void 0 : _f.includes("newEntry"))
+      disabled: !((_g = $data.urlData) == null ? void 0 : _g.includes("newEntry"))
     }, null, _parent));
     _push(ssrRenderComponent(_component_text_input, {
       modelValue: $data.form.route,
@@ -2278,7 +2280,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.route,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Route",
-      disabled: !((_g = $data.urlData) == null ? void 0 : _g.includes("newEntry"))
+      disabled: !((_h = $data.urlData) == null ? void 0 : _h.includes("newEntry"))
     }, null, _parent));
     _push(ssrRenderComponent(_component_select_input, {
       modelValue: $data.form.category_id,
@@ -2286,7 +2288,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.category_id,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Category",
-      disabled: !((_h = $data.urlData) == null ? void 0 : _h.includes("newEntry"))
+      disabled: !((_i = $data.urlData) == null ? void 0 : _i.includes("newEntry"))
     }, {
       default: withCtx((_, _push2, _parent2, _scopeId) => {
         if (_push2) {
@@ -2398,7 +2400,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.rig_date,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "RIG Date Given",
-      disabled: !((_i = $data.urlData) == null ? void 0 : _i.includes("newEntry"))
+      disabled: !((_j = $data.urlData) == null ? void 0 : _j.includes("newEntry"))
     }, null, _parent));
     _push(ssrRenderComponent(_component_date_pick, {
       modelValue: $data.form.day0,
@@ -2406,7 +2408,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       error: $data.form.errors.day0,
       class: "pb-8 pr-6 w-full lg:w-1/2",
       label: "Day 0",
-      disabled: !((_j = $data.urlData) == null ? void 0 : _j.includes("newEntry"))
+      disabled: !((_k = $data.urlData) == null ? void 0 : _k.includes("newEntry"))
     }, null, _parent));
     _push(ssrRenderComponent(_component_select_input, {
       modelValue: $data.form.outcome_id,
@@ -2677,11 +2679,10 @@ const _sfc_main$8 = {
     mappedReport(data) {
       return data.map((item) => {
         const biteHistory = item.biteHistory.map((item2) => {
-          var _a, _b, _c;
           const tissue = this.tissueCultureVaccine.find((items) => items.id === item2.tcv_id);
           return {
-            date_of_bite: (item2 == null ? void 0 : item2.date_of_bite) ? new Date((_a = this.item) == null ? void 0 : _a.date_of_bite) : "",
-            date_of_consult: (item2 == null ? void 0 : item2.date_of_consult) ? new Date((_b = this.item) == null ? void 0 : _b.date_of_consult) : "",
+            date_of_bite: (item2 == null ? void 0 : item2.date_of_bite) ? new Date(item2 == null ? void 0 : item2.date_of_bite) : "",
+            date_of_consult: (item2 == null ? void 0 : item2.date_of_consult) ? new Date(item2 == null ? void 0 : item2.date_of_consult) : "",
             animal_status_id: this.name(this.animalStatus, item2.animal_status_id),
             animal_type_id: this.name(this.animals, item2.animal_type_id),
             place: item2.place,
@@ -2689,7 +2690,7 @@ const _sfc_main$8 = {
             site_id: this.name(this.site, item2.site_id),
             type_of_bite_id: this.name(this.biteTypes, item2.type_of_bite_id),
             washed: (item2 == null ? void 0 : item2.washed) === 1 ? "Yes" : "No",
-            rig_date: (item2 == null ? void 0 : item2.rig_date) ? new Date((_c = this.item) == null ? void 0 : _c.rig_date) : "",
+            rig_date: (item2 == null ? void 0 : item2.rig_date) ? new Date(item2 == null ? void 0 : item2.rig_date) : "",
             route: tissue == null ? void 0 : tissue.route,
             day0: tissue == null ? void 0 : tissue.day0,
             day3: tissue == null ? void 0 : tissue.day3,
