@@ -108,7 +108,7 @@ class PatientsController extends Controller
 
     public function store(): RedirectResponse
     {
-        $patientRequest->validate([
+        Patient::validate([
             'first_name' => 'required|max:50',
             'middle_name' => 'max:50',
             'last_name' => 'required|max:50',
