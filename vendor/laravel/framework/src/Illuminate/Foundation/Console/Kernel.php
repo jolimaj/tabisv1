@@ -275,7 +275,8 @@ class Kernel implements KernelContract
      */
     protected function schedule(Schedule $schedule)
     {
-        //
+        $schedule->command('app:expiry-stock-out-notification')->everyMinute(); // Adjust frequency if necessary
+        $schedule->command('app:send-message-notification')->everyMinute(); // Adjust frequency if necessary
     }
 
     /**
