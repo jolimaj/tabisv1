@@ -161,9 +161,13 @@ export default {
   },
   methods: {
     update() {
+      if(this)
        this.active > 4 ?  this.action() : this.next()
     },
     action() {
+      if(this.urlData.includes('newEntry')){
+        this.form.post('/patients/validate')
+      }
       this.urlData?.includes('newEntry') ? this.form.post(`/patients/${this.patient.id}/newEntry`): this.form.put(`/patients/${this.patient.id}`)
     },
     destroy() {

@@ -1953,10 +1953,14 @@ const _sfc_main$b = {
   },
   methods: {
     update() {
-      this.active > 4 ? this.action() : this.next();
+      if (this)
+        this.active > 4 ? this.action() : this.next();
     },
     action() {
       var _a;
+      if (this.urlData.includes("newEntry")) {
+        this.form.post("/patients/validate");
+      }
       ((_a = this.urlData) == null ? void 0 : _a.includes("newEntry")) ? this.form.post(`/patients/${this.patient.id}/newEntry`) : this.form.put(`/patients/${this.patient.id}`);
     },
     destroy() {
