@@ -3,16 +3,21 @@
     "file": "assets/.logo-mF6ym6uu.png",
     "src": "resources/images/.logo.png"
   },
+  "resources/images/dog.png": {
+    "file": "assets/dog-Ces9k5an.png",
+    "src": "resources/images/dog.png"
+  },
   "resources/js/app.js": {
-    "file": "assets/app-Yuk65LUM.js",
+    "file": "assets/app-Ln5ybdqV.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-ChgEz1Ys.css"
+      "assets/app-DBesMhzJ.css"
     ],
     "assets": [
-      "assets/.logo-mF6ym6uu.png"
+      "assets/.logo-mF6ym6uu.png",
+      "assets/dog-Ces9k5an.png"
     ]
   }
 }

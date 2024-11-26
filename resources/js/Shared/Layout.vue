@@ -102,7 +102,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import { Link } from '@inertiajs/vue3'
 import Icon from '@/Shared/Icon.vue'
 import Logo from '@/Shared/Logo.vue'

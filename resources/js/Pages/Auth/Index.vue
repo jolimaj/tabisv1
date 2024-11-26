@@ -8,7 +8,6 @@
       </Link>
 
       <div class="space-x-8">
-        <a href="#" class="text-blue-950 hover:text-orange-500">Home</a>
         <a href="/login" class="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">Login</a>
       </div>
     </nav>
@@ -17,8 +16,8 @@
     <div class="relative h-screen bg-white flex items-center justify-between">
     <!-- Left side text -->
     <div class="ml-12">
-      <h1 class="text-5xl font-bold text-blue-900">DON'T GET FOOLED</h1>
-      <h2 class="text-5xl font-bold text-orange-500">BY RABIES</h2>
+      <h1 class="text-6xl font-bold text-blue-900">DON'T GET FOOLED</h1>
+      <h2 class="text-6xl font-bold text-orange-500">BY RABIES</h2>
     </div>
 
     <!-- Image of the dog and blue polygon background -->
@@ -28,33 +27,30 @@
 
       <!-- Dog image -->
       <img
-        src="/images/aso.png"
+        src="../../../images/dog.png"
         alt="Dog with bone"
-        class="relative w-1/2 object-cover z-10"
+        class="relative w-full object-cover z-10"
       />
     </div>
   </div>
 
 
     <!-- Our Story Section -->
-    <section class="py-12 text-center">
-      <h2 class="text-3xl font-bold mb-8">Our Story</h2>
-      <p class="mb-8 max-w-2xl mx-auto">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-        <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold mb-4">VISION</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p>
-        </div>
-        <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold mb-4">MISSION</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p>
-        </div>
-        <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold mb-4">MANDATE</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p>
-        </div>
+     <div class="py-12 text-center bg-white">
+      <!-- component -->
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div class="flex flex-col items-center justify-around p-4 m-4 w-80 h-80 rounded-2xl cursor-pointer" style="transform: translate(0px, 0px); opacity: 1;"><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-blue-900 rounded-xl -rotate-2 " style="z-index: -1;"></div><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-orange-500 rounded-xl rotate-2 " style="z-index: -1;"></div><div class="absolute z-0 w-full h-full transform scale-x-105 scale-y-95 bg-white rounded-xl " style="z-index: -1;"></div><h3 class="z-10 p-2 text-3xl font-semibold text-blue-900 hover:scale-110 transition-transform duration-300">VISION</h3><div class="z-10 p-2 text-blue-900">
+              <el-icon :size="100">
+                <View class="hover:scale-110 transition-transform duration-300"/>
+              </el-icon>
+            </div><div class="z-10 p-2 text-sm text-center text-gray-500 hover:scale-110 transition-transform duration-300 ">Health community working together for a better quality of life.</div></div>
+            <div class="flex flex-col items-center justify-around p-4 m-4 w-80 h-80 rounded-2xl cursor-pointer" style="transform: translate(0px, 0px); opacity: 1;"><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-blue-900 rounded-xl -rotate-2 " style="z-index: -1;"></div><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-orange-500 rounded-xl rotate-2 " style="z-index: -1;"></div><div class="absolute z-0 w-full h-full transform scale-x-105 scale-y-95 bg-white rounded-xl " style="z-index: -1;"></div><h3 class="z-10 p-2 text-3xl font-semibold text-blue-900 hover:scale-110 transition-transform duration-300">MISSION</h3><div class="z-10 p-2 text-blue-900">
+              <el-icon :size="100">
+                <Promotion class="hover:scale-110 transition-transform duration-300"/>
+              </el-icon>
+            </div><div class="z-10 p-2 text-sm text-center text-gray-500 hover:scale-110 transition-transform duration-300 ">Promotes multi-sectoral partnership and community involvement for self commitment and quality health care delivery..</div></div>
       </div>
-    </section>
+    </div>
 
     <!-- Contact Section -->
     <section class="py-12 text-center bg-blue-100">
@@ -104,12 +100,17 @@
 import { Head } from '@inertiajs/vue3'
 import { Link } from '@inertiajs/vue3'
 import Logo from '@/Shared/Logo.vue'
+import Icon from '@/Shared/Icon.vue'
+import { View, Promotion } from '@element-plus/icons-vue';
 
 export default {
   components: {
     Head,
     Link,
     Logo,
+    Icon,
+    View,
+    Promotion
   },
   props: {
     auth: Object,

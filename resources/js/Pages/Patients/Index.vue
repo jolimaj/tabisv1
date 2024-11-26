@@ -185,7 +185,6 @@ import throttle from 'lodash/throttle'
 import mapValues from 'lodash/mapValues'
 import Pagination from '@/Shared/Pagination.vue'
 import SearchFilter from '@/Shared/SearchFilter.vue'
-import { Search } from '@element-plus/icons-vue';
 
 export default {
   components: {

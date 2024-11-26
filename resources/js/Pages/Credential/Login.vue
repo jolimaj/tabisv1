@@ -4,7 +4,9 @@
     <div class="w-full max-w-md">
       <form class="mt-8 bg-white rounded-lg shadow-xl overflow-hidden" @submit.prevent="login">
         <div class="px-10 py-12">
-          <logo class="block mx-auto w-full max-w-xs fill-white" height="50" />
+          <Link class="mt-1" href="/">
+            <logo class="block mx-auto w-full max-w-xs fill-white" height="50" />
+          </Link>
           <div class="mt-6 mx-auto w-24 border-b-2" />
           <text-input v-model="form.email" :error="form.errors.email" class="mt-10" label="Email" type="email" autofocus autocapitalize="off" />
           <text-input v-model="form.password" :error="form.errors.password" class="mt-6" label="Password" type="password" />
@@ -22,6 +24,7 @@
 </template>
 
 <script>
+import { Link } from '@inertiajs/vue3'
 import { Head } from '@inertiajs/vue3'
 import Logo from '@/Shared/Logo.vue'
 import TextInput from '@/Shared/TextInput.vue'
@@ -33,6 +36,7 @@ export default {
     LoadingButton,
     Logo,
     TextInput,
+    Link,
   },
   data() {
     return {

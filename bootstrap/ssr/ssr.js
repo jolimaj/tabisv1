@@ -1,9 +1,9 @@
 import { Head, Link, createInertiaApp } from "@inertiajs/vue3";
 import { useSSRContext, mergeProps, resolveComponent, withCtx, createVNode, createTextVNode, toDisplayString, openBlock, createBlock, Fragment, renderList, renderSlot, withDirectives, vModelSelect, createCommentVNode, createSSRApp, h } from "vue";
-import { ssrRenderAttrs, ssrRenderComponent, ssrRenderAttr, ssrInterpolate, ssrRenderSlot, ssrIncludeBooleanAttr, ssrLooseContain, ssrRenderTeleport, ssrRenderStyle, ssrRenderList, ssrRenderClass, ssrLooseEqual } from "vue/server-renderer";
+import { ssrRenderAttrs, ssrRenderComponent, ssrRenderAttr, ssrRenderStyle, ssrInterpolate, ssrRenderSlot, ssrIncludeBooleanAttr, ssrLooseContain, ssrRenderTeleport, ssrRenderList, ssrRenderClass, ssrLooseEqual } from "vue/server-renderer";
+import { View, Promotion, BellFilled } from "@element-plus/icons-vue";
 import { v4 } from "uuid";
 import { createPopper } from "@popperjs/core";
-import { BellFilled } from "@element-plus/icons-vue";
 import { Bar, Pie, Doughnut } from "vue-chartjs";
 import { Chart, Title, Tooltip, Legend, ArcElement, BarElement, CategoryScale, LinearScale } from "chart.js";
 import { utils, write } from "xlsx";
@@ -12,7 +12,7 @@ import throttle from "lodash/throttle.js";
 import mapValues from "lodash/mapValues.js";
 import { renderToString } from "@vue/server-renderer";
 import createServer from "@inertiajs/vue3/server";
-const _imports_0 = "/build/assets/.logo-mF6ym6uu.png";
+const _imports_0$1 = "/build/assets/.logo-mF6ym6uu.png";
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -20,248 +20,27 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$s = {};
-function _sfc_ssrRender$s(_ctx, _push, _parent, _attrs) {
+const _sfc_main$r = {};
+function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs) {
   _push(`<img${ssrRenderAttrs(mergeProps({
     class: "h-30 w-auto",
-    src: _imports_0,
+    src: _imports_0$1,
     alt: ""
   }, _attrs))}>`);
-}
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Logo.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
-};
-const Logo = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$s], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Logo.vue"]]);
-const _sfc_main$r = {
-  components: {
-    Head,
-    Link,
-    Logo
-  },
-  props: {
-    auth: Object
-  }
-};
-function _sfc_ssrRender$r(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Head = resolveComponent("Head");
-  const _component_Link = resolveComponent("Link");
-  const _component_Logo = resolveComponent("Logo");
-  _push(`<!--[-->`);
-  _push(ssrRenderComponent(_component_Head, { title: "Home" }, null, _parent));
-  _push(`<div class="bg-gray-100 min-h-screen" data-v-529a9e67><nav class="bg-gray-50 shadow-lg py-4 px-10 flex justify-between items-center" data-v-529a9e67>`);
-  _push(ssrRenderComponent(_component_Link, {
-    class: "mt-1",
-    href: "/"
-  }, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(ssrRenderComponent(_component_Logo, {
-          class: "fill-white",
-          style: { "width": "130px", "height": "55px" }
-        }, null, _parent2, _scopeId));
-      } else {
-        return [
-          createVNode(_component_Logo, {
-            class: "fill-white",
-            style: { "width": "130px", "height": "55px" }
-          })
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`<div class="space-x-8" data-v-529a9e67><a href="#" class="text-blue-950 hover:text-orange-500" data-v-529a9e67>Home</a><a href="/login" class="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600" data-v-529a9e67>Login</a></div></nav><div class="relative h-screen bg-white flex items-center justify-between" data-v-529a9e67><div class="ml-12" data-v-529a9e67><h1 class="text-5xl font-bold text-blue-900" data-v-529a9e67>DON&#39;T GET FOOLED</h1><h2 class="text-5xl font-bold text-orange-500" data-v-529a9e67>BY RABIES</h2></div><div class="relative flex items-center justify-center w-1/2 h-full" data-v-529a9e67><div class="absolute inset-0 w-full h-full bg-blue-900 clip-polygon" data-v-529a9e67></div><img src="/images/aso.png" alt="Dog with bone" class="relative w-1/2 object-cover z-10" data-v-529a9e67></div></div><section class="py-12 text-center" data-v-529a9e67><h2 class="text-3xl font-bold mb-8" data-v-529a9e67>Our Story</h2><p class="mb-8 max-w-2xl mx-auto" data-v-529a9e67>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet.</p><div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8" data-v-529a9e67><div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg" data-v-529a9e67><h3 class="text-xl font-bold mb-4" data-v-529a9e67>VISION</h3><p data-v-529a9e67>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p></div><div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg" data-v-529a9e67><h3 class="text-xl font-bold mb-4" data-v-529a9e67>MISSION</h3><p data-v-529a9e67>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p></div><div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg" data-v-529a9e67><h3 class="text-xl font-bold mb-4" data-v-529a9e67>MANDATE</h3><p data-v-529a9e67>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p></div></div></section><section class="py-12 text-center bg-blue-100" data-v-529a9e67><h2 class="text-3xl font-bold mb-8" data-v-529a9e67>Need Any Help?</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8" data-v-529a9e67><div class="flex flex-col items-center text-blue-900" data-v-529a9e67><p data-v-529a9e67><strong data-v-529a9e67>Contact:</strong></p><p data-v-529a9e67>(042) 713-2009 / 797-6976</p><p data-v-529a9e67>(042) 719-5599</p><p data-v-529a9e67>Email: <a href="mailto:cpvet_tayabas@yahoo.com" class="underline" data-v-529a9e67>cpvet_tayabas@yahoo.com</a></p></div><div class="bg-white p-6 rounded-lg shadow-lg" data-v-529a9e67><h3 class="text-xl font-bold mb-4" data-v-529a9e67>Fill the form to contact us directly</h3><form data-v-529a9e67><div class="mb-4" data-v-529a9e67><label for="name" class="block text-left text-blue-900" data-v-529a9e67>Name</label><input id="name" type="text" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></div><div class="mb-4" data-v-529a9e67><label for="email" class="block text-left text-blue-900" data-v-529a9e67>Email Address</label><input id="email" type="email" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></div><div class="mb-4" data-v-529a9e67><label for="phone" class="block text-left text-blue-900" data-v-529a9e67>Mobile Number</label><input id="phone" type="text" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></div><div class="mb-4" data-v-529a9e67><label for="message" class="block text-left text-blue-900" data-v-529a9e67>Message</label><textarea id="message" rows="4" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></textarea></div><button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded-lg" data-v-529a9e67>Send Message</button></form></div></div></section><footer class="py-4 bg-blue-900 text-white text-center" data-v-529a9e67><p data-v-529a9e67>© TABIS SYSTEM 2024</p></footer></div><!--]-->`);
 }
 const _sfc_setup$r = _sfc_main$r.setup;
 _sfc_main$r.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/Index.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Logo.vue");
   return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
-const Index$4 = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$r], ["__scopeId", "data-v-529a9e67"], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Auth/Index.vue"]]);
-const __vite_glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: Index$4
-}, Symbol.toStringTag, { value: "Module" }));
+const Logo = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["ssrRender", _sfc_ssrRender$r], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Logo.vue"]]);
 const _sfc_main$q = {
-  inheritAttrs: false,
-  props: {
-    id: {
-      type: String,
-      default() {
-        return `text-input-${v4()}`;
-      }
-    },
-    type: {
-      type: String,
-      default: "text"
-    },
-    error: String,
-    label: String,
-    modelValue: String
-  },
-  emits: ["update:modelValue"],
-  methods: {
-    focus() {
-      this.$refs.input.focus();
-    },
-    select() {
-      this.$refs.input.select();
-    },
-    setSelectionRange(start, end) {
-      this.$refs.input.setSelectionRange(start, end);
-    }
-  }
-};
-function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${ssrRenderAttrs(mergeProps({
-    class: _ctx.$attrs.class
-  }, _attrs))}>`);
-  if ($props.label) {
-    _push(`<label class="form-label"${ssrRenderAttr("for", $props.id)}>${ssrInterpolate($props.label)}:</label>`);
-  } else {
-    _push(`<!---->`);
-  }
-  _push(`<input${ssrRenderAttrs(mergeProps({
-    id: $props.id,
-    ref: "input"
-  }, { ..._ctx.$attrs, class: null }, {
-    class: ["form-input", { error: $props.error }],
-    type: $props.type,
-    value: $props.modelValue
-  }))}>`);
-  if ($props.error) {
-    _push(`<div class="form-error">${ssrInterpolate($props.error)}</div>`);
-  } else {
-    _push(`<!---->`);
-  }
-  _push(`</div>`);
-}
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/TextInput.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
-};
-const TextInput = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$q], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/TextInput.vue"]]);
-const _sfc_main$p = {
-  props: {
-    loading: Boolean
-  }
-};
-function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<button${ssrRenderAttrs(mergeProps({
-    disabled: $props.loading,
-    class: "flex items-center"
-  }, _attrs))}>`);
-  if ($props.loading) {
-    _push(`<div class="btn-spinner mr-2"></div>`);
-  } else {
-    _push(`<!---->`);
-  }
-  ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
-  _push(`</button>`);
-}
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/LoadingButton.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
-};
-const LoadingButton = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$p], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/LoadingButton.vue"]]);
-const _sfc_main$o = {
-  components: {
-    Head,
-    LoadingButton,
-    Logo,
-    TextInput
-  },
-  data() {
-    return {
-      form: this.$inertia.form({
-        email: "",
-        password: "",
-        user_type: "",
-        remember: false
-      })
-    };
-  },
-  methods: {
-    login() {
-      this.form.post("/login");
-    }
-  }
-};
-function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_Head = resolveComponent("Head");
-  const _component_logo = resolveComponent("logo");
-  const _component_text_input = resolveComponent("text-input");
-  const _component_loading_button = resolveComponent("loading-button");
-  _push(`<!--[-->`);
-  _push(ssrRenderComponent(_component_Head, { title: "Login" }, null, _parent));
-  _push(`<div class="flex items-center justify-center p-6 min-h-screen bg-white-800"><div class="w-full max-w-md"><form class="mt-8 bg-white rounded-lg shadow-xl overflow-hidden"><div class="px-10 py-12">`);
-  _push(ssrRenderComponent(_component_logo, {
-    class: "block mx-auto w-full max-w-xs fill-white",
-    height: "50"
-  }, null, _parent));
-  _push(`<div class="mt-6 mx-auto w-24 border-b-2"></div>`);
-  _push(ssrRenderComponent(_component_text_input, {
-    modelValue: $data.form.email,
-    "onUpdate:modelValue": ($event) => $data.form.email = $event,
-    error: $data.form.errors.email,
-    class: "mt-10",
-    label: "Email",
-    type: "email",
-    autofocus: "",
-    autocapitalize: "off"
-  }, null, _parent));
-  _push(ssrRenderComponent(_component_text_input, {
-    modelValue: $data.form.password,
-    "onUpdate:modelValue": ($event) => $data.form.password = $event,
-    error: $data.form.errors.password,
-    class: "mt-6",
-    label: "Password",
-    type: "password"
-  }, null, _parent));
-  _push(`<label class="flex items-center mt-6 select-none" for="remember"><input id="remember"${ssrIncludeBooleanAttr(Array.isArray($data.form.remember) ? ssrLooseContain($data.form.remember, null) : $data.form.remember) ? " checked" : ""} class="mr-1" type="checkbox"><span class="text-sm">Remember Me</span></label></div><div class="flex px-10 py-4 bg-gray-100 border-t border-gray-100">`);
-  _push(ssrRenderComponent(_component_loading_button, {
-    loading: $data.form.processing,
-    class: "btn-indigo ml-auto",
-    type: "submit"
-  }, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Login`);
-      } else {
-        return [
-          createTextVNode("Login")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</div></form></div></div><!--]-->`);
-}
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Credential/Login.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
-};
-const Login = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Credential/Login.vue"]]);
-const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: Login
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$n = {
   props: {
     name: String
   }
 };
-function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$q(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   if ($props.name === "cheveron-down") {
     _push(`<svg${ssrRenderAttrs(mergeProps({
       xmlns: "http://www.w3.org/2000/svg",
@@ -316,18 +95,296 @@ function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
       viewBox: "0 0 24 24",
       xmlns: "http://www.w3.org/2000/svg"
     }, _attrs))}><path d="M12,2A10,10,0,0,0,5.12,4.77V3a1,1,0,0,0-2,0V7.5a1,1,0,0,0,1,1H8.62a1,1,0,0,0,0-2H6.22A8,8,0,1,1,4,12a1,1,0,0,0-2,0A10,10,0,1,0,12,2Zm0,6a1,1,0,0,0-1,1v3a1,1,0,0,0,1,1h2a1,1,0,0,0,0-2H13V9A1,1,0,0,0,12,8Z" fill="#6563ff"></path></svg>`);
+  } else if ($props.name === "buble") {
+    _push(`<svg${ssrRenderAttrs(mergeProps({
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 1024 1024"
+    }, _attrs))}><path fill="#6563ff" d="M273.536 736H800a64 64 0 0 0 64-64V256a64 64 0 0 0-64-64H224a64 64 0 0 0-64 64v570.88zM296 800 147.968 918.4A32 32 0 0 1 96 893.44V256a128 128 0 0 1 128-128h576a128 128 0 0 1 128 128v416a128 128 0 0 1-128 128z"></path><path fill="#6563ff" d="M512 499.2a51.2 51.2 0 1 1 0-102.4 51.2 51.2 0 0 1 0 102.4zm192 0a51.2 51.2 0 1 1 0-102.4 51.2 51.2 0 0 1 0 102.4zm-384 0a51.2 51.2 0 1 1 0-102.4 51.2 51.2 0 0 1 0 102.4z"></path></svg>`);
   } else {
     _push(`<!---->`);
   }
 }
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Icon.vue");
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+};
+const Icon = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$q], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Icon.vue"]]);
+const _imports_0 = "/build/assets/dog-Ces9k5an.png";
+const _sfc_main$p = {
+  components: {
+    Head,
+    Link,
+    Logo,
+    Icon,
+    View,
+    Promotion
+  },
+  props: {
+    auth: Object
+  }
+};
+function _sfc_ssrRender$p(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Head = resolveComponent("Head");
+  const _component_Link = resolveComponent("Link");
+  const _component_Logo = resolveComponent("Logo");
+  const _component_el_icon = resolveComponent("el-icon");
+  const _component_View = resolveComponent("View");
+  const _component_Promotion = resolveComponent("Promotion");
+  _push(`<!--[-->`);
+  _push(ssrRenderComponent(_component_Head, { title: "Home" }, null, _parent));
+  _push(`<div class="bg-gray-100 min-h-screen" data-v-529a9e67><nav class="bg-gray-50 shadow-lg py-4 px-10 flex justify-between items-center" data-v-529a9e67>`);
+  _push(ssrRenderComponent(_component_Link, {
+    class: "mt-1",
+    href: "/"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Logo, {
+          class: "fill-white",
+          style: { "width": "130px", "height": "55px" }
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Logo, {
+            class: "fill-white",
+            style: { "width": "130px", "height": "55px" }
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`<div class="space-x-8" data-v-529a9e67><a href="/login" class="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600" data-v-529a9e67>Login</a></div></nav><div class="relative h-screen bg-white flex items-center justify-between" data-v-529a9e67><div class="ml-12" data-v-529a9e67><h1 class="text-6xl font-bold text-blue-900" data-v-529a9e67>DON&#39;T GET FOOLED</h1><h2 class="text-6xl font-bold text-orange-500" data-v-529a9e67>BY RABIES</h2></div><div class="relative flex items-center justify-center w-1/2 h-full" data-v-529a9e67><div class="absolute inset-0 w-full h-full bg-blue-900 clip-polygon" data-v-529a9e67></div><img${ssrRenderAttr("src", _imports_0)} alt="Dog with bone" class="relative w-full object-cover z-10" data-v-529a9e67></div></div><div class="py-12 text-center bg-white" data-v-529a9e67><div class="grid grid-cols-1 gap-4 sm:grid-cols-2" data-v-529a9e67><div class="flex flex-col items-center justify-around p-4 m-4 w-80 h-80 rounded-2xl cursor-pointer" style="${ssrRenderStyle({ "transform": "translate(0px, 0px)", "opacity": "1" })}" data-v-529a9e67><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-blue-900 rounded-xl -rotate-2" style="${ssrRenderStyle({ "z-index": "-1" })}" data-v-529a9e67></div><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-orange-500 rounded-xl rotate-2" style="${ssrRenderStyle({ "z-index": "-1" })}" data-v-529a9e67></div><div class="absolute z-0 w-full h-full transform scale-x-105 scale-y-95 bg-white rounded-xl" style="${ssrRenderStyle({ "z-index": "-1" })}" data-v-529a9e67></div><h3 class="z-10 p-2 text-3xl font-semibold text-blue-900 hover:scale-110 transition-transform duration-300" data-v-529a9e67>VISION</h3><div class="z-10 p-2 text-blue-900" data-v-529a9e67>`);
+  _push(ssrRenderComponent(_component_el_icon, { size: 100 }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_View, { class: "hover:scale-110 transition-transform duration-300" }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_View, { class: "hover:scale-110 transition-transform duration-300" })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div><div class="z-10 p-2 text-sm text-center text-gray-500 hover:scale-110 transition-transform duration-300" data-v-529a9e67>Health community working together for a better quality of life.</div></div><div class="flex flex-col items-center justify-around p-4 m-4 w-80 h-80 rounded-2xl cursor-pointer" style="${ssrRenderStyle({ "transform": "translate(0px, 0px)", "opacity": "1" })}" data-v-529a9e67><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-blue-900 rounded-xl -rotate-2" style="${ssrRenderStyle({ "z-index": "-1" })}" data-v-529a9e67></div><div class="absolute z-0 w-full h-full text-white transform scale-x-105 scale-y-95 bg-orange-500 rounded-xl rotate-2" style="${ssrRenderStyle({ "z-index": "-1" })}" data-v-529a9e67></div><div class="absolute z-0 w-full h-full transform scale-x-105 scale-y-95 bg-white rounded-xl" style="${ssrRenderStyle({ "z-index": "-1" })}" data-v-529a9e67></div><h3 class="z-10 p-2 text-3xl font-semibold text-blue-900 hover:scale-110 transition-transform duration-300" data-v-529a9e67>MISSION</h3><div class="z-10 p-2 text-blue-900" data-v-529a9e67>`);
+  _push(ssrRenderComponent(_component_el_icon, { size: 100 }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_Promotion, { class: "hover:scale-110 transition-transform duration-300" }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_Promotion, { class: "hover:scale-110 transition-transform duration-300" })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div><div class="z-10 p-2 text-sm text-center text-gray-500 hover:scale-110 transition-transform duration-300" data-v-529a9e67>Promotes multi-sectoral partnership and community involvement for self commitment and quality health care delivery..</div></div></div></div><section class="py-12 text-center bg-blue-100" data-v-529a9e67><h2 class="text-3xl font-bold mb-8" data-v-529a9e67>Need Any Help?</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8" data-v-529a9e67><div class="flex flex-col items-center text-blue-900" data-v-529a9e67><p data-v-529a9e67><strong data-v-529a9e67>Contact:</strong></p><p data-v-529a9e67>(042) 713-2009 / 797-6976</p><p data-v-529a9e67>(042) 719-5599</p><p data-v-529a9e67>Email: <a href="mailto:cpvet_tayabas@yahoo.com" class="underline" data-v-529a9e67>cpvet_tayabas@yahoo.com</a></p></div><div class="bg-white p-6 rounded-lg shadow-lg" data-v-529a9e67><h3 class="text-xl font-bold mb-4" data-v-529a9e67>Fill the form to contact us directly</h3><form data-v-529a9e67><div class="mb-4" data-v-529a9e67><label for="name" class="block text-left text-blue-900" data-v-529a9e67>Name</label><input id="name" type="text" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></div><div class="mb-4" data-v-529a9e67><label for="email" class="block text-left text-blue-900" data-v-529a9e67>Email Address</label><input id="email" type="email" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></div><div class="mb-4" data-v-529a9e67><label for="phone" class="block text-left text-blue-900" data-v-529a9e67>Mobile Number</label><input id="phone" type="text" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></div><div class="mb-4" data-v-529a9e67><label for="message" class="block text-left text-blue-900" data-v-529a9e67>Message</label><textarea id="message" rows="4" class="w-full border border-gray-300 p-2 rounded-lg" data-v-529a9e67></textarea></div><button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded-lg" data-v-529a9e67>Send Message</button></form></div></div></section><footer class="py-4 bg-blue-900 text-white text-center" data-v-529a9e67><p data-v-529a9e67>© TABIS SYSTEM 2024</p></footer></div><!--]-->`);
+}
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/Index.vue");
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+};
+const Index$4 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["ssrRender", _sfc_ssrRender$p], ["__scopeId", "data-v-529a9e67"], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Auth/Index.vue"]]);
+const __vite_glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: Index$4
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$o = {
+  inheritAttrs: false,
+  props: {
+    id: {
+      type: String,
+      default() {
+        return `text-input-${v4()}`;
+      }
+    },
+    type: {
+      type: String,
+      default: "text"
+    },
+    error: String,
+    label: String,
+    modelValue: String
+  },
+  emits: ["update:modelValue"],
+  methods: {
+    focus() {
+      this.$refs.input.focus();
+    },
+    select() {
+      this.$refs.input.select();
+    },
+    setSelectionRange(start, end) {
+      this.$refs.input.setSelectionRange(start, end);
+    }
+  }
+};
+function _sfc_ssrRender$o(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(mergeProps({
+    class: _ctx.$attrs.class
+  }, _attrs))}>`);
+  if ($props.label) {
+    _push(`<label class="form-label"${ssrRenderAttr("for", $props.id)}>${ssrInterpolate($props.label)}:</label>`);
+  } else {
+    _push(`<!---->`);
+  }
+  _push(`<input${ssrRenderAttrs(mergeProps({
+    id: $props.id,
+    ref: "input"
+  }, { ..._ctx.$attrs, class: null }, {
+    class: ["form-input", { error: $props.error }],
+    type: $props.type,
+    value: $props.modelValue
+  }))}>`);
+  if ($props.error) {
+    _push(`<div class="form-error">${ssrInterpolate($props.error)}</div>`);
+  } else {
+    _push(`<!---->`);
+  }
+  _push(`</div>`);
+}
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/TextInput.vue");
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+};
+const TextInput = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["ssrRender", _sfc_ssrRender$o], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/TextInput.vue"]]);
+const _sfc_main$n = {
+  props: {
+    loading: Boolean
+  }
+};
+function _sfc_ssrRender$n(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<button${ssrRenderAttrs(mergeProps({
+    disabled: $props.loading,
+    class: "flex items-center"
+  }, _attrs))}>`);
+  if ($props.loading) {
+    _push(`<div class="btn-spinner mr-2"></div>`);
+  } else {
+    _push(`<!---->`);
+  }
+  ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
+  _push(`</button>`);
+}
 const _sfc_setup$n = _sfc_main$n.setup;
 _sfc_main$n.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Icon.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/LoadingButton.vue");
   return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
-const Icon = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$n], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Icon.vue"]]);
+const LoadingButton = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$n], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/LoadingButton.vue"]]);
 const _sfc_main$m = {
+  components: {
+    Head,
+    LoadingButton,
+    Logo,
+    TextInput,
+    Link
+  },
+  data() {
+    return {
+      form: this.$inertia.form({
+        email: "",
+        password: "",
+        user_type: "",
+        remember: false
+      })
+    };
+  },
+  methods: {
+    login() {
+      this.form.post("/login");
+    }
+  }
+};
+function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Head = resolveComponent("Head");
+  const _component_Link = resolveComponent("Link");
+  const _component_logo = resolveComponent("logo");
+  const _component_text_input = resolveComponent("text-input");
+  const _component_loading_button = resolveComponent("loading-button");
+  _push(`<!--[-->`);
+  _push(ssrRenderComponent(_component_Head, { title: "Login" }, null, _parent));
+  _push(`<div class="flex items-center justify-center p-6 min-h-screen bg-white-800"><div class="w-full max-w-md"><form class="mt-8 bg-white rounded-lg shadow-xl overflow-hidden"><div class="px-10 py-12">`);
+  _push(ssrRenderComponent(_component_Link, {
+    class: "mt-1",
+    href: "/"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(ssrRenderComponent(_component_logo, {
+          class: "block mx-auto w-full max-w-xs fill-white",
+          height: "50"
+        }, null, _parent2, _scopeId));
+      } else {
+        return [
+          createVNode(_component_logo, {
+            class: "block mx-auto w-full max-w-xs fill-white",
+            height: "50"
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`<div class="mt-6 mx-auto w-24 border-b-2"></div>`);
+  _push(ssrRenderComponent(_component_text_input, {
+    modelValue: $data.form.email,
+    "onUpdate:modelValue": ($event) => $data.form.email = $event,
+    error: $data.form.errors.email,
+    class: "mt-10",
+    label: "Email",
+    type: "email",
+    autofocus: "",
+    autocapitalize: "off"
+  }, null, _parent));
+  _push(ssrRenderComponent(_component_text_input, {
+    modelValue: $data.form.password,
+    "onUpdate:modelValue": ($event) => $data.form.password = $event,
+    error: $data.form.errors.password,
+    class: "mt-6",
+    label: "Password",
+    type: "password"
+  }, null, _parent));
+  _push(`<label class="flex items-center mt-6 select-none" for="remember"><input id="remember"${ssrIncludeBooleanAttr(Array.isArray($data.form.remember) ? ssrLooseContain($data.form.remember, null) : $data.form.remember) ? " checked" : ""} class="mr-1" type="checkbox"><span class="text-sm">Remember Me</span></label></div><div class="flex px-10 py-4 bg-gray-100 border-t border-gray-100">`);
+  _push(ssrRenderComponent(_component_loading_button, {
+    loading: $data.form.processing,
+    class: "btn-indigo ml-auto",
+    type: "submit"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`Login`);
+      } else {
+        return [
+          createTextVNode("Login")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div></form></div></div><!--]-->`);
+}
+const _sfc_setup$m = _sfc_main$m.setup;
+_sfc_main$m.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Credential/Login.vue");
+  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+};
+const Login = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$m], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Credential/Login.vue"]]);
+const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: Login
+}, Symbol.toStringTag, { value: "Module" }));
+const _sfc_main$l = {
   props: {
     placement: {
       type: String,
@@ -372,7 +429,7 @@ const _sfc_main$m = {
     });
   }
 };
-function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<button${ssrRenderAttrs(mergeProps({ type: "button" }, _attrs))}>`);
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   if ($data.show) {
@@ -386,14 +443,14 @@ function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }
   _push(`</button>`);
 }
-const _sfc_setup$m = _sfc_main$m.setup;
-_sfc_main$m.setup = (props, ctx) => {
+const _sfc_setup$l = _sfc_main$l.setup;
+_sfc_main$l.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Dropdown.vue");
-  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
-const Dropdown = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$m], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Dropdown.vue"]]);
-const _sfc_main$l = {
+const Dropdown = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$l], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Dropdown.vue"]]);
+const _sfc_main$k = {
   components: {
     Icon,
     Link
@@ -437,7 +494,7 @@ const _sfc_main$l = {
     };
   }
 };
-function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Link = resolveComponent("Link");
   const _component_icon = resolveComponent("icon");
   _push(`<div${ssrRenderAttrs(_attrs)}><!--[-->`);
@@ -473,14 +530,14 @@ function _sfc_ssrRender$l(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   });
   _push(`<!--]--></div>`);
 }
-const _sfc_setup$l = _sfc_main$l.setup;
-_sfc_main$l.setup = (props, ctx) => {
+const _sfc_setup$k = _sfc_main$k.setup;
+_sfc_main$k.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/MainMenu.vue");
-  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
+  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
-const MainMenu = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$l], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/MainMenu.vue"]]);
-const _sfc_main$k = {
+const MainMenu = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$k], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/MainMenu.vue"]]);
+const _sfc_main$j = {
   data() {
     return {
       show: true
@@ -495,7 +552,7 @@ const _sfc_main$k = {
     }
   }
 };
-function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${ssrRenderAttrs(_attrs)}>`);
   if (_ctx.$page.props.flash.success && $data.show) {
     _push(`<div class="flex items-center justify-between mb-8 max-w-3xl bg-green-500 rounded"><div class="flex items-center"><svg class="shrink-0 ml-4 mr-2 w-4 h-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon></svg><div class="py-4 text-white text-sm font-medium">${ssrInterpolate(_ctx.$page.props.flash.success)}</div></div><button type="button" class="group mr-2 p-2"><svg class="block w-2 h-2 fill-green-800 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="235.908" height="235.908" viewBox="278.046 126.846 235.908 235.908"><path d="M506.784 134.017c-9.56-9.56-25.06-9.56-34.62 0L396 210.18l-76.164-76.164c-9.56-9.56-25.06-9.56-34.62 0-9.56 9.56-9.56 25.06 0 34.62L361.38 244.8l-76.164 76.165c-9.56 9.56-9.56 25.06 0 34.62 9.56 9.56 25.06 9.56 34.62 0L396 279.42l76.164 76.165c9.56 9.56 25.06 9.56 34.62 0 9.56-9.56 9.56-25.06 0-34.62L430.62 244.8l76.164-76.163c9.56-9.56 9.56-25.06 0-34.62z"></path></svg></button></div>`);
@@ -515,14 +572,14 @@ function _sfc_ssrRender$k(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }
   _push(`</div>`);
 }
-const _sfc_setup$k = _sfc_main$k.setup;
-_sfc_main$k.setup = (props, ctx) => {
+const _sfc_setup$j = _sfc_main$j.setup;
+_sfc_main$j.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/FlashMessages.vue");
-  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
+  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
-const FlashMessages = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["ssrRender", _sfc_ssrRender$k], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/FlashMessages.vue"]]);
-const _sfc_main$j = {
+const FlashMessages = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$j], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/FlashMessages.vue"]]);
+const _sfc_main$i = {
   components: {
     Dropdown,
     FlashMessages,
@@ -552,7 +609,7 @@ const _sfc_main$j = {
     }
   }
 };
-function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Link = resolveComponent("Link");
   const _component_logo = resolveComponent("logo");
   const _component_dropdown = resolveComponent("dropdown");
@@ -875,15 +932,15 @@ function _sfc_ssrRender$j(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(`</div></div></div></div></div>`);
 }
-const _sfc_setup$j = _sfc_main$j.setup;
-_sfc_main$j.setup = (props, ctx) => {
+const _sfc_setup$i = _sfc_main$i.setup;
+_sfc_main$i.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Layout.vue");
-  return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
+  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
-const Layout = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["ssrRender", _sfc_ssrRender$j], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Layout.vue"]]);
+const Layout = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$i], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Shared/Layout.vue"]]);
 Chart.register(Title, Tooltip, Legend, ArcElement, BarElement, CategoryScale, LinearScale);
-const _sfc_main$i = {
+const _sfc_main$h = {
   components: {
     Head,
     Bar,
@@ -964,7 +1021,7 @@ const _sfc_main$i = {
     }
   }
 };
-function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Head = resolveComponent("Head");
   const _component_Pie = resolveComponent("Pie");
   const _component_Doughnut = resolveComponent("Doughnut");
@@ -1013,155 +1070,16 @@ function _sfc_ssrRender$i(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }, null, _parent));
   _push(`</div></div></div></div>`);
 }
-const _sfc_setup$i = _sfc_main$i.setup;
-_sfc_main$i.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Index.vue");
-  return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
-};
-const Index$3 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["ssrRender", _sfc_ssrRender$i], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Dashboard/Index.vue"]]);
-const __vite_glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: Index$3
-}, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$h = {
-  data() {
-    return {
-      notifications: [
-        {
-          title: "dsds",
-          message: "sxsdsd",
-          created_at: /* @__PURE__ */ new Date()
-        }
-      ]
-    };
-  },
-  mounted() {
-  },
-  methods: {
-    //       fetchNotifications() {
-    //         // Fetch notifications from your backend API
-    //         axios.get('/api/notifications')
-    //           .then(response => {
-    //             this.notifications   
-    //    = response.data;
-    //           });
-    //       }
-  }
-};
-function _sfc_ssrRender$h(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _component_el_container = resolveComponent("el-container");
-  const _component_el_main = resolveComponent("el-main");
-  const _component_el_table = resolveComponent("el-table");
-  const _component_el_table_column = resolveComponent("el-table-column");
-  _push(ssrRenderComponent(_component_el_container, _attrs, {
-    default: withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(ssrRenderComponent(_component_el_main, null, {
-          default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-            if (_push3) {
-              _push3(ssrRenderComponent(_component_el_table, { data: $data.notifications }, {
-                default: withCtx((_3, _push4, _parent4, _scopeId3) => {
-                  if (_push4) {
-                    _push4(ssrRenderComponent(_component_el_table_column, {
-                      prop: "title",
-                      label: "Title"
-                    }, null, _parent4, _scopeId3));
-                    _push4(ssrRenderComponent(_component_el_table_column, {
-                      prop: "message",
-                      label: "Message"
-                    }, null, _parent4, _scopeId3));
-                    _push4(ssrRenderComponent(_component_el_table_column, {
-                      prop: "created_at",
-                      label: "Created At",
-                      width: "180"
-                    }, null, _parent4, _scopeId3));
-                  } else {
-                    return [
-                      createVNode(_component_el_table_column, {
-                        prop: "title",
-                        label: "Title"
-                      }),
-                      createVNode(_component_el_table_column, {
-                        prop: "message",
-                        label: "Message"
-                      }),
-                      createVNode(_component_el_table_column, {
-                        prop: "created_at",
-                        label: "Created At",
-                        width: "180"
-                      })
-                    ];
-                  }
-                }),
-                _: 1
-              }, _parent3, _scopeId2));
-            } else {
-              return [
-                createVNode(_component_el_table, { data: $data.notifications }, {
-                  default: withCtx(() => [
-                    createVNode(_component_el_table_column, {
-                      prop: "title",
-                      label: "Title"
-                    }),
-                    createVNode(_component_el_table_column, {
-                      prop: "message",
-                      label: "Message"
-                    }),
-                    createVNode(_component_el_table_column, {
-                      prop: "created_at",
-                      label: "Created At",
-                      width: "180"
-                    })
-                  ]),
-                  _: 1
-                }, 8, ["data"])
-              ];
-            }
-          }),
-          _: 1
-        }, _parent2, _scopeId));
-      } else {
-        return [
-          createVNode(_component_el_main, null, {
-            default: withCtx(() => [
-              createVNode(_component_el_table, { data: $data.notifications }, {
-                default: withCtx(() => [
-                  createVNode(_component_el_table_column, {
-                    prop: "title",
-                    label: "Title"
-                  }),
-                  createVNode(_component_el_table_column, {
-                    prop: "message",
-                    label: "Message"
-                  }),
-                  createVNode(_component_el_table_column, {
-                    prop: "created_at",
-                    label: "Created At",
-                    width: "180"
-                  })
-                ]),
-                _: 1
-              }, 8, ["data"])
-            ]),
-            _: 1
-          })
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-}
 const _sfc_setup$h = _sfc_main$h.setup;
 _sfc_main$h.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Notifications.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Index.vue");
   return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
-const Notifications = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$h], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Notifications.vue"]]);
-const __vite_glob_0_3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const Index$3 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["ssrRender", _sfc_ssrRender$h], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Dashboard/Index.vue"]]);
+const __vite_glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: Notifications
+  default: Index$3
 }, Symbol.toStringTag, { value: "Module" }));
 const _sfc_main$g = {
   inheritAttrs: false,
@@ -1963,7 +1881,7 @@ _sfc_main$c.setup = (props, ctx) => {
   return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
 const Create$2 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["ssrRender", _sfc_ssrRender$c], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Patients/Create.vue"]]);
-const __vite_glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Create$2
 }, Symbol.toStringTag, { value: "Module" }));
@@ -2557,7 +2475,7 @@ _sfc_main$b.setup = (props, ctx) => {
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
 const Edit$2 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", _sfc_ssrRender$b], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Patients/Edit.vue"]]);
-const __vite_glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Edit$2
 }, Symbol.toStringTag, { value: "Module" }));
@@ -3641,7 +3559,7 @@ _sfc_main$8.setup = (props, ctx) => {
   return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
 const Index$2 = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$8], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Patients/Index.vue"]]);
-const __vite_glob_0_6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$2
 }, Symbol.toStringTag, { value: "Module" }));
@@ -3803,7 +3721,7 @@ _sfc_main$7.setup = (props, ctx) => {
   return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
 const Create$1 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Supplies/Create.vue"]]);
-const __vite_glob_0_7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Create$1
 }, Symbol.toStringTag, { value: "Module" }));
@@ -3941,7 +3859,7 @@ _sfc_main$6.setup = (props, ctx) => {
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
 const Edit$1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$6], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Supplies/Edit.vue"]]);
-const __vite_glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Edit$1
 }, Symbol.toStringTag, { value: "Module" }));
@@ -4319,7 +4237,7 @@ _sfc_main$5.setup = (props, ctx) => {
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
 const Index$1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Supplies/Index.vue"]]);
-const __vite_glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index$1
 }, Symbol.toStringTag, { value: "Module" }));
@@ -4514,7 +4432,7 @@ _sfc_main$3.setup = (props, ctx) => {
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
 const Create = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Users/Create.vue"]]);
-const __vite_glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Create
 }, Symbol.toStringTag, { value: "Module" }));
@@ -4705,7 +4623,7 @@ _sfc_main$1.setup = (props, ctx) => {
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
 const Edit = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Users/Edit.vue"]]);
-const __vite_glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Edit
 }, Symbol.toStringTag, { value: "Module" }));
@@ -4910,7 +4828,7 @@ _sfc_main.setup = (props, ctx) => {
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 const Index = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Users/Index.vue"]]);
-const __vite_glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const __vite_glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index
 }, Symbol.toStringTag, { value: "Module" }));
@@ -4918,7 +4836,7 @@ createServer((page) => createInertiaApp({
   page,
   render: renderToString,
   resolve: (name) => {
-    const pages = /* @__PURE__ */ Object.assign({ "./Pages/Auth/Index.vue": __vite_glob_0_0, "./Pages/Credential/Login.vue": __vite_glob_0_1, "./Pages/Dashboard/Index.vue": __vite_glob_0_2, "./Pages/Notifications.vue": __vite_glob_0_3, "./Pages/Patients/Create.vue": __vite_glob_0_4, "./Pages/Patients/Edit.vue": __vite_glob_0_5, "./Pages/Patients/Index.vue": __vite_glob_0_6, "./Pages/Supplies/Create.vue": __vite_glob_0_7, "./Pages/Supplies/Edit.vue": __vite_glob_0_8, "./Pages/Supplies/Index.vue": __vite_glob_0_9, "./Pages/Users/Create.vue": __vite_glob_0_10, "./Pages/Users/Edit.vue": __vite_glob_0_11, "./Pages/Users/Index.vue": __vite_glob_0_12 });
+    const pages = /* @__PURE__ */ Object.assign({ "./Pages/Auth/Index.vue": __vite_glob_0_0, "./Pages/Credential/Login.vue": __vite_glob_0_1, "./Pages/Dashboard/Index.vue": __vite_glob_0_2, "./Pages/Patients/Create.vue": __vite_glob_0_3, "./Pages/Patients/Edit.vue": __vite_glob_0_4, "./Pages/Patients/Index.vue": __vite_glob_0_5, "./Pages/Supplies/Create.vue": __vite_glob_0_6, "./Pages/Supplies/Edit.vue": __vite_glob_0_7, "./Pages/Supplies/Index.vue": __vite_glob_0_8, "./Pages/Users/Create.vue": __vite_glob_0_9, "./Pages/Users/Edit.vue": __vite_glob_0_10, "./Pages/Users/Index.vue": __vite_glob_0_11 });
     return pages[`./Pages/${name}.vue`];
   },
   title: (title) => title ? `${title} - Tabis` : "Tabis",
