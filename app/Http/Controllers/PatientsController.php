@@ -83,6 +83,31 @@ class PatientsController extends Controller
 
     public function validatePatients(PatientRequest $patientRequest)
     {
+       
+    }
+
+    public function create(): Response
+    {
+        return Inertia::render('Patients/Create', [
+            'animals' => AnimalType::all(),
+            'genders' => Gender::all(),
+            'biteTypes' => BiteTypes::all(),
+            'categorie' => Category::all(),
+            'animalStatus' => BitingAnimalStatus::all(),
+            'categories' => Category::all(),
+            'outcome' => Outcome::all(),
+            'barangays' => Barangay::all(),
+            'site' => Site::all(),
+            'supplies' => Supplies::all()
+                ->where('supplies_id', '!=', 1),
+            'suppliesCategory' => SuppliesCategory::all(),
+            'tissueCultureVaccine' => TissueCultureVaccine::all(),
+            'current_user' => Auth::user()
+        ]); 
+    }
+
+    public function store(): RedirectResponse
+    {
         $patientRequest->validate([
             'first_name' => 'required|max:50',
             'middle_name' => 'max:50',
@@ -108,30 +133,7 @@ class PatientsController extends Controller
             'day0' => 'required|max:50',  
             'vaccine_id' => 'required'
         ]);
-    }
-
-    public function create(): Response
-    {
-        return Inertia::render('Patients/Create', [
-            'animals' => AnimalType::all(),
-            'genders' => Gender::all(),
-            'biteTypes' => BiteTypes::all(),
-            'categorie' => Category::all(),
-            'animalStatus' => BitingAnimalStatus::all(),
-            'categories' => Category::all(),
-            'outcome' => Outcome::all(),
-            'barangays' => Barangay::all(),
-            'site' => Site::all(),
-            'supplies' => Supplies::all()
-                ->where('supplies_id', '!=', 1),
-            'suppliesCategory' => SuppliesCategory::all(),
-            'tissueCultureVaccine' => TissueCultureVaccine::all(),
-            'current_user' => Auth::user()
-        ]); 
-    }
-
-    public function store(): RedirectResponse
-    {
+        
         $userData = Patient::create([
             'first_name' => Request::get('first_name'),
             'middle_name' => Request::get('middle_name'),
