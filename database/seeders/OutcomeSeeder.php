@@ -13,9 +13,9 @@ class OutcomeSeeder extends Seeder
     public function run(): void
     {
         $outcomes = [
-            ['name' => 'Ongoing'],
-            ['name' => 'Recovered',],
-            ['name' => 'Fatal',],
+            ['name' => 'INC'],
+            ['name' => 'Completed',],
+            ['name' => 'Defaulter',],
         ];
         foreach ($outcomes as $data) {
             Outcome::create($data);

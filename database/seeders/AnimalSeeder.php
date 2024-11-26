@@ -17,6 +17,7 @@ class AnimalSeeder extends Seeder
             ['name' => 'Pet Dog'],
             ['name' => 'Stray Dog Owned'],
             ['name' => 'Cat'],
+            ['name' => 'Stray Cat'],
             ['name' => 'Others'],
         ];
 
