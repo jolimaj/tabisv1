@@ -45,7 +45,7 @@ class SendMessageNotification extends Command
         $res = [];
         foreach (($schedules['patients']) as $patient) {
             $smsService = new SMSNotification();
-            $smsService->sendMessage('+63'.$patient->phone);
+            $smsService->sendMessage('+63' . preg_replace('/^0/', '', $patient->phone));
             $res[] = [
                 'phone'=>$patient->phone,
             ];
