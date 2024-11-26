@@ -16,7 +16,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // Make sure this is scheduled to run daily or at the correct time
-        $schedule->command('app:expiry-stock-out-notification')->everyMinute(); // Adjust frequency if necessary
+        $schedule->command('app:expiry-stock-out-notification')->dailyAt('00:00');; // Adjust frequency if necessary
+        $schedule->command('app:send-message-notification')->dailyAt('00:00'); // Adjust frequency if necessary
     }
 
     protected function commands()

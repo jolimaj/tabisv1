@@ -29,7 +29,7 @@ class ExpiryStockOutNotification extends Command
     public function handle(Notifications $notifications, Supplies $supplies)
     {
         // Check Stock Levels
-        $outOfStockItems =$supplies::where('quantity', '<=', 1000)->get();
+        $outOfStockItems =$supplies::where('quantity', '<=', 20)->get();
 
         // Save notifications for out-of-stock items
         foreach ($outOfStockItems as $item) {
