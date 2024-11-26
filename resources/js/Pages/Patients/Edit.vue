@@ -33,7 +33,7 @@
             <textarea-input v-model="form.address" :error="form.errors.address" class="pb-8 pr-6 w-full lg:w-1/2" label="Address" />
           </div> 
           <div class="flex flex-wrap -mb-8 p-8" v-else-if="active === 2">
-            <date-pick v-model="form.date_of_bite" :error="form.errors.date_of_bite" class="pb-8 pr-6 w-full lg:w-1/2" label="Date of Bite" disabled/>
+            <date-pick v-model="form.date_of_bite" :error="form.errors.date_of_bite" class="pb-8 pr-6 w-full lg:w-1/2" label="Date of Bite" :disabled = "!urlData?.includes('newEntry')"/>
             <text-input v-model="form.place" :error="form.errors.place" class="pb-8 pr-6 w-full lg:w-1/2" label="Place (Where Biting Occured)" :disabled = "!urlData?.includes('newEntry')"/>
             <select-input v-model="form.animal_type_id" :error="form.errors.animal_type_id" class="pb-8 pr-6 w-full lg:w-1/2" label="Animal Type" :disabled = "!urlData?.includes('newEntry')">
               <option  v-for="animal in animals" :key="animal.id" :value="animal.id">{{animal.name}}</option>
