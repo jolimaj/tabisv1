@@ -19,9 +19,9 @@
       <form @submit.prevent="update">
         <div class="flex flex-wrap -mb-8 p-8">
           <div class="flex flex-wrap -mb-8 p-8" v-if="active === 1">
-            <text-input v-model="form.first_name" :error="form.errors.first_name" class="pb-8 pr-6 w-full lg:w-1/2" label="First name" disabled/>
-            <text-input v-model="form.middle_name" :error="form.errors.middle_name" class="pb-8 pr-6 w-full lg:w-1/2" label="Middle name" disabled/>
-            <text-input v-model="form.last_name" :error="form.errors.last_name" class="pb-8 pr-6 w-full lg:w-1/2" label="Last name" disabled/>
+            <text-input v-model="form.first_name" :error="form.errors.first_name" class="pb-8 pr-6 w-full lg:w-1/2" label="First name"/>
+            <text-input v-model="form.middle_name" :error="form.errors.middle_name" class="pb-8 pr-6 w-full lg:w-1/2" label="Middle name"/>
+            <text-input v-model="form.last_name" :error="form.errors.last_name" class="pb-8 pr-6 w-full lg:w-1/2" label="Last name"/>
             <select-input v-model="form.sex" :error="form.errors.sex" class="pb-8 pr-6 w-full lg:w-1/2" label="Sex" disabled>
               <option  v-for="gender in genders" :key="gender.id" :value="gender.id">{{gender.name}}</option>
             </select-input>

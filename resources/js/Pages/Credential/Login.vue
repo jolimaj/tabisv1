@@ -1,6 +1,6 @@
 <template>
   <Head title="Login" />
-  <div class="flex items-center justify-center p-6 min-h-screen bg-white-800">
+  <div class="flex items-center justify-center p-6 min-h-screen bg-white-800 home">
     <div class="w-full max-w-md">
       <form class="mt-8 bg-white rounded-lg shadow-xl overflow-hidden" @submit.prevent="login">
         <div class="px-10 py-12">
@@ -53,5 +53,15 @@ export default {
       this.form.post('/login')
     },
   },
+  
 }
 </script>
+
+<style scoped>
+.home {
+  background-image: url('../../../images/bg.png');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+</style>

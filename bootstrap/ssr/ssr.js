@@ -12,7 +12,7 @@ import throttle from "lodash/throttle.js";
 import mapValues from "lodash/mapValues.js";
 import { renderToString } from "@vue/server-renderer";
 import createServer from "@inertiajs/vue3/server";
-const _imports_0$1 = "/build/assets/.logo-mF6ym6uu.png";
+const _imports_0$1 = "/build/assets/logo-BGF7x-pO.png";
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -313,7 +313,7 @@ function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   const _component_loading_button = resolveComponent("loading-button");
   _push(`<!--[-->`);
   _push(ssrRenderComponent(_component_Head, { title: "Login" }, null, _parent));
-  _push(`<div class="flex items-center justify-center p-6 min-h-screen bg-white-800"><div class="w-full max-w-md"><form class="mt-8 bg-white rounded-lg shadow-xl overflow-hidden"><div class="px-10 py-12">`);
+  _push(`<div class="flex items-center justify-center p-6 min-h-screen bg-white-800 home" data-v-8c1c95a9><div class="w-full max-w-md" data-v-8c1c95a9><form class="mt-8 bg-white rounded-lg shadow-xl overflow-hidden" data-v-8c1c95a9><div class="px-10 py-12" data-v-8c1c95a9>`);
   _push(ssrRenderComponent(_component_Link, {
     class: "mt-1",
     href: "/"
@@ -335,7 +335,7 @@ function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     }),
     _: 1
   }, _parent));
-  _push(`<div class="mt-6 mx-auto w-24 border-b-2"></div>`);
+  _push(`<div class="mt-6 mx-auto w-24 border-b-2" data-v-8c1c95a9></div>`);
   _push(ssrRenderComponent(_component_text_input, {
     modelValue: $data.form.email,
     "onUpdate:modelValue": ($event) => $data.form.email = $event,
@@ -354,7 +354,7 @@ function _sfc_ssrRender$m(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     label: "Password",
     type: "password"
   }, null, _parent));
-  _push(`<label class="flex items-center mt-6 select-none" for="remember"><input id="remember"${ssrIncludeBooleanAttr(Array.isArray($data.form.remember) ? ssrLooseContain($data.form.remember, null) : $data.form.remember) ? " checked" : ""} class="mr-1" type="checkbox"><span class="text-sm">Remember Me</span></label></div><div class="flex px-10 py-4 bg-gray-100 border-t border-gray-100">`);
+  _push(`<label class="flex items-center mt-6 select-none" for="remember" data-v-8c1c95a9><input id="remember"${ssrIncludeBooleanAttr(Array.isArray($data.form.remember) ? ssrLooseContain($data.form.remember, null) : $data.form.remember) ? " checked" : ""} class="mr-1" type="checkbox" data-v-8c1c95a9><span class="text-sm" data-v-8c1c95a9>Remember Me</span></label></div><div class="flex px-10 py-4 bg-gray-100 border-t border-gray-100" data-v-8c1c95a9>`);
   _push(ssrRenderComponent(_component_loading_button, {
     loading: $data.form.processing,
     class: "btn-indigo ml-auto",
@@ -379,7 +379,7 @@ _sfc_main$m.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Credential/Login.vue");
   return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
 };
-const Login = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$m], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Credential/Login.vue"]]);
+const Login = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$m], ["__scopeId", "data-v-8c1c95a9"], ["__file", "/home/jolima/workingFiles/tabisv1/resources/js/Pages/Credential/Login.vue"]]);
 const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Login
